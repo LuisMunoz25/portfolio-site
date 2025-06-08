@@ -1,0 +1,30 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#moon-logo {
+    width: 25px;
+    height: 25px;
+}
+
+#sun-logo {
+    width: 35px;
+    height: 35px;
+}
+
+#profile-picture {
+    width: 265px;
+    height: 391px;
+}
+
+.tech-icons {
+    display: flex;
+    
+}
+.icon {
+    width: 34px;
+    height: 30px;
+}
