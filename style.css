@@ -32,18 +32,10 @@ body {
     font-family: 'space-grotesk', sans-serif;
 }
 
-<<<<<<< HEAD
 .hero-name {
     margin-left: 50px;
     color: #B1AEA5;
     font-size: 25px;
-=======
-#hero-name a {
-    margin-left: 50px;
-    color: #B1AEA5;
-    font-size: 25px;
-    text-decoration: none;
->>>>>>> 10db94f (Create branch for CSS styling, add fonts and finish navbar)
 }
 .navbar {
     padding-left: 350px;
@@ -63,19 +55,11 @@ body {
     background-color: #46433B;
     margin-right: 50px;
     border: none;
-<<<<<<< HEAD
-=======
-    cursor: pointer;
->>>>>>> 10db94f (Create branch for CSS styling, add fonts and finish navbar)
 }
 #moon-logo {
     width: 25px;
     height: 25px;
     fill: #B1AEA5;
-<<<<<<< HEAD
-=======
-    
->>>>>>> 10db94f (Create branch for CSS styling, add fonts and finish navbar)
 }
 
 #sun-logo {
