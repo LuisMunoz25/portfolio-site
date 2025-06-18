@@ -31,9 +31,10 @@ body {
 /* all content inside the container class*/
 .container {
   max-width: 100%;
-  margin: 0 auto;
+  margin: 0 60px;
   padding: 2rem;
   font-family: 'space-grotesk', sans-serif;
+  line-height: 1.4;
 }
 
 /* header sections, hero-name, links and theme-toggle */
@@ -52,29 +53,24 @@ body {
 
 #hero-name a {
     margin-left: 60px;
-    margin-left: 60px;
     color: #B1AEA5;
-    font-size: 1.7rem;
     font-size: 1.7rem;
     text-decoration: none;
 }
 
 .navbar {
     flex-grow: 1;
-  display: flex;
-  justify-content: end;
+    display: flex;
+    justify-content: end;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
-    font-size: 1.7rem;
-    font-size: 1.7rem;
-    
+    font-size: 1.7rem;  
 }
 
 .nav-links a {
-    padding: 0 40px;
     padding: 0 40px;
     text-decoration: none;
     color: #B1AEA5;
@@ -84,14 +80,9 @@ body {
     background-color: #46433B;
     margin-right: 60px;
     width: 60px;
-    height: 60px;
-    margin-right: 60px;
-    width: 60px;
-    height: 60px;
+    height: auto;
     border: none;
     cursor: pointer;
-    justify-content: center;
-    align-items: center;
     justify-content: center;
     align-items: center;
 }
@@ -105,8 +96,6 @@ body {
     display: none;
     width: 50px;
     height: 55px;
-    width: 50px;
-    height: 55px;
 }
 
 /* first section containing "hello world!", about, profile picture and technologies */
@@ -117,17 +106,12 @@ body {
     color: #504935;
     font-family: "jetbrains-mono", sans-serif;
     font-size: 2rem;
-    font-size: 2rem;
     font-weight: 700;
     
 }
 .first-section {
     margin: 100px 60px 0px;
-    margin: 100px 60px 0px;
     display: grid;
-    height: 100%;
-    width: 100%;
-    grid-template: 130px repeat(2, 350px) / 450px 220px 1000px;
     height: 100%;
     width: 100%;
     grid-template: 130px repeat(2, 350px) / 450px 220px 1000px;
@@ -142,14 +126,11 @@ body {
 #profile-picture {
     width: 450px;
     height: 700px;
-    width: 450px;
-    height: 700px;
 }
 
 .about-luis, .tools-technologies {
     font-weight: 500;
     margin-bottom: 20px;
-    font-size: 2rem;
     font-size: 2rem;
 }
 
@@ -158,12 +139,9 @@ body {
     justify-items: center;
     align-content: center;
     font-size: 1.6rem;
-    font-size: 1.6rem;
     color: #504935;
     background-color: #FFFBEF;
     text-align: center;
-    height: 330px;
-    width: 1000px;
     height: 330px;
     width: 1000px;
     grid-row: 2 / 3;
@@ -172,12 +150,9 @@ body {
 
 .tech-section {
     margin-top: 20px;
-    margin-top: 20px;
     display: grid;
     justify-items: center;
     align-content: center;
-    height: 330px;
-    width: 1000px;
     height: 330px;
     width: 1000px;
     grid-row: 3 / 4;
@@ -189,7 +164,6 @@ body {
 
 .tech-icons {
     margin-top: 20px;
-    margin-top: 20px;
     display: flex;
     width: 50%;
     justify-content: space-between;
@@ -198,7 +172,44 @@ body {
 
 .icon img {
     width: 50px;
-    height: 55px;
+    height: auto;
     justify-content: center;
     align-items: center;
+}
+
+/* Experience and Education Section */
+.experience-education {
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    height: 350px;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    color: #504935;
+}
+
+.experience, .education {
+    justify-items: center;
+    text-align: justify;
+}
+
+.experience, .education, h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.divider {
+  width: 3px;
+  background-color: #504935;
+  height: 90%;
+  /* margin: 0 1rem; */
+}
+
+.education-list {
+    list-style: none;
+}
+
+.certification-list {
+    list-style: inside;
+    padding-left: 4%;
 }
