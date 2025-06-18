@@ -7,11 +7,18 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="container">
 
     <!--Header/NavBar-->
     <header class="header">
         <h1 id="hero-name"><a href="#hero-name">LUIS.</a></h1>
+    
+    <!-- Hamburger menu button (mobile only) -->   
+        <button class="hamburger" aria-label="Open navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
         <nav class="navbar">
             <ul class="nav-links">
                 <li><a href="#intro">INTRO</a></li>
@@ -20,7 +27,7 @@
                 <li><a href="#contact">SAY HELLO</a></li>
             </ul>
         </nav>
-        <button id="theme-toggle">
+        <button id="theme-toggle" aria-label="button">
             <img src="./icons/Moon.svg" alt="moon-logo" id="moon-logo">
             <img src="./icons/Sun.svg" alt="sun-logo" id="sun-logo">
         </button>
@@ -28,7 +35,7 @@
 
     <!--Main Section-->
     <main>
-        <span id="typewriter">HELLO WORLD!</span>
+        <section id="typewriter">HELLO WORLD!</section>
         <div class="first-section">
         <div class="intro-luis">
             <p id="intro">I am Luis,<br>
@@ -118,7 +125,7 @@
             <div class="social">
                 <a class="social-icon" href="https://www.linkedin.com/in/luismunoz2592/" target="_blank"><img src="./icons/LinkedIn.svg" alt="linkein-logo"></a>
                 <a class="social-icon" href="https://github.com/LuisMunoz25" target="_blank"><img src="./icons/github.svg" alt="github-logo"></a>
-                <a class="social-icon" href="https://www.coursera.org/learner/luis-munoz-25" target="_blank"><img src="./icons/coursera.svg" alt="coursera-logo"></a>
+                <a class="social-icon" href="https://www.coursera.org/learner/luis-munoz-25" target="_blank"><img src="./icons/Coursera.svg" alt="coursera-logo"></a>
             </div>
         </div>
 
@@ -132,7 +139,7 @@
     <footer class="footer">
         <p>&copy; LUIS MUNOZ 2025</p>
     </footer>
-    </div>
+
 <script src="./script.js"></script>
 </body>
 </html>
