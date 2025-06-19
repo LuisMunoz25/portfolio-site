@@ -24,6 +24,153 @@
 body {
   margin: 0;
   padding: 0;
-  max-width: 1920px;
-  min-height: 100vh;
+}
+
+/* Mobile Structure */
+.container {
+  font-family: 'space-grotesk';
+  max-height: 100vh;
+  max-width: 1280px;
+  width: 100%;
+  /* margin: 1rem; */ /*remove line*/
+  display: block;
+}
+
+header, main, section, footer {
+  padding: 0px 2rem;
+  font-size: 1.13rem;
+  color: #504935;
+  line-height: 1.3;
+  text-align: justify;
+}
+
+.header .container {
+  background-color: #46433B;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 30px;
+  height: 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  order: 3;
+}
+
+.hamburger span {
+  width: 100%;
+  height: 3px;
+  background-color: #B1AEA5;
+  border-radius: 2px;
+}
+
+#hero-name a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #B1AEA5;
+  order: 1;
+}
+
+.nav-links {
+  display: none;
+}
+
+#theme-toggle {
+  order: 2;
+  background-color: #46433B;
+  border: none;
+  width: auto;
+}
+
+#moon-logo {
+  height: auto;
+  width: 100%;
+}
+
+#sun-logo {
+  display: none;
+  height: auto;
+  width: 100%;
+}
+
+/* Main Section */
+.main {
+  padding: 3rem 0px 0px;
+}
+
+.main .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#typewriter {
+  padding-bottom: 2rem;
+  font-family: "jetbrains-mono";
+  font-size: 1.5rem;
+}
+
+.first-section {
+ display: flex;
+ flex-direction: column;
+}
+
+#intro {
+  display: none;
+}
+
+.intro-luis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+
+}
+
+#profile-picture {
+  width: 60%;
+  height: auto;
+}
+
+#about {
+  order: 1;
+  justify-items: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.about-luis {
+  padding-bottom: 0.5rem;
+
+}
+.intro-luis {
+  order: 2;
+}
+
+.tech-section {
+  order: 3;
+  display: block;
+  background-color: #46433B;
+  color: #B1AEA5;
+  justify-items: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.tech-icons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+  padding: 1rem 0px;
 }
