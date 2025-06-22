@@ -35,17 +35,19 @@ body {
   display: block;
 }
 
-h3 {
-  padding-bottom: 0.5rem;
-}
-
 header, main, section, footer {
   margin: 0 0.5rem;
   padding: 0px 1rem;
-  font-size: 1.13rem;
+  font-size: 1.1rem;
   color: #504935;
   line-height: 1.3;
   text-align: justify;
+}
+
+h3 {
+  padding-bottom: 0.5rem;
+  font-size: 1.13rem;
+  text-align: center;
 }
 
 .header .container {
@@ -180,6 +182,11 @@ header, main, section, footer {
   padding: 1rem 0px;
 }
 
+.icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 /* Experience and education */
 .experience, .education {
   justify-items: center;
@@ -224,7 +231,63 @@ padding: 0.5rem 0;
   padding: 1rem 0;
 }
 
+.project-list li {
+  line-height: 2;
+}
+
 .project-list a {
   text-decoration: none;
   color: #B1AEA5;
+}
+
+/* Get in touch/Social media */
+#contact {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1rem 0;;
+}
+
+.get-in-touch {
+  padding: 1rem 0;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+  padding: 1rem 0px;
+  overflow: hidden;
+}
+
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 8px; /* space between icons */
+}
+
+.social-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cat-coding img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Footer */
+.footer {
+  height: auto;
+  background-color: #46433B;
+  color: #B1AEA5;
+  text-align: center;
+  padding: 1% 32px;
 }
