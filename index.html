@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Luis Portfolio</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-    <!--Header/NavBar-->
-    <header>
-        <h1 class="hero-name">Luis.</h1>
+    <!-- Header/NavBar -->
+    <header class="header">
+        <div class="container">
+        <h1 id="hero-name"><a href="#hero-name">LUIS.</a></h1>
+    
+    <!-- Hamburger menu button (mobile only) -->   
+        <button class="hamburger" aria-label="Open navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <!-- Navigation menu -->
         <nav class="navbar">
             <ul class="nav-links">
                 <li><a href="#intro">INTRO</a></li>
@@ -19,54 +29,62 @@
                 <li><a href="#contact">SAY HELLO</a></li>
             </ul>
         </nav>
-        <button id="theme-toggle">
+
+        <!-- Theme toggle -->
+        <button id="theme-toggle" aria-label="button">
             <img src="./icons/Moon.svg" alt="moon-logo" id="moon-logo">
             <img src="./icons/Sun.svg" alt="sun-logo" id="sun-logo">
         </button>
+        </div>
     </header>
 
     <!--Main Section-->
-    <main>
-        <span id="typewriter">HELLO WORLD!</span>
-        <div class="intro-luis">
+    <main class="main">
+        <div class="container">
+        <section id="typewriter">HELLO WORLD!</section>
+        <div class="first-section">
+        <section class="intro-luis">
             <p id="intro">I am Luis,<br>
             a front-end developer <br>
             based in Toronto.
             </p>
             <img src="./pictures and gifs/LuisEdit.jpg" alt="profile-picture" id="profile-picture">
-        </div>
+        </section>
 
         <!--About-->
-        <div id="about">
+        <section id="about">
             <h3 class="about-luis">ABOUT</h3>
-            <p>I'm a self-taught web developer focused on building fast, <br>
+            <p>I'm a self-taught web developer focused on building fast,
                 responsive websites using modern tools like HTML, CSS, and JavaScript. <br>
-                Right now, I'm working on improving my JavaScript and learning React to take on more <br>
+                Right now, I'm working on improving my JavaScript and learning React to take on more
                 dynamic projects. <br>
                 My goal? To land a developer role where I can build cool things and grow as a coder.
             </p>
-        </div>
+        </section>
 
         <!--Tools/Skills And Technologies-->
-        <div class="tech-section">
-            <h3>TOOLS & TECHNOLOGIES</h3>
+        <section class="tech-section">
+            <h3 class="tools-technologies">TOOLS & TECHNOLOGIES</h3>
             <div class="tech-icons">
-                <div class="icon"><img src="./icons/html5.svg" alt="html-logo"></div>
-                <div class="icon"><img src="./icons/css.svg" alt="css-logo"></div>
-                <div class="icon"><img src="./icons/javascript.svg" alt="javascript-logo"></div>
-                <div class="icon"><img src="./icons/git.svg" alt="git-logo"></div>
-                <div class="icon"><img src="./icons/github.svg" alt="github-logo"></div>
+                <div class="icon"><img src="./icons/HTML.svg" alt="html-logo"></div>
+                <div class="icon"><img src="./icons/CSS.svg" alt="css-logo"></div>
+                <div class="icon"><img src="./icons/JavaScript.svg" alt="javascript-logo"></div>
+                <div class="icon"><img src="./icons/Git.svg" alt="git-logo"></div>
+                <div class="icon"><img src="./icons/Github.svg" alt="github-logo"></div>
             </div>
+        </section>
+        </div>
         </div>
     </main>
 
     <!--Experience And Education-->
     <section class="experience-education">
+        <div class="container">
         <div class="experience">
             <h3>EXPERIENCE</h3>
-            <p>While I havent't worked in a developer role (yet!), I've <br>
-                picked up a ton of transferable skills through past <br>
-                roles in food service, customer experience, and team <br>
+            <p>While I haven't worked in a developer role (yet!), I've
+                picked up a ton of transferable skills through past 
+                roles in food service, customer experience, and team
                 management.
             </p>
         </div>
@@ -75,37 +93,41 @@
 
         <div class="education">
             <h3>EDUCATION</h3>
-            <ul>
-                <li>&gt; <strong>Bachelor's Degree in Industrial Maintenance Engineering</strong> <br>
+            <ul class="education-list">
+                <li class="item"><strong>Bachelor's Degree in Industrial Maintenance Engineering</strong> <br>
                 Universidad Tecnologica de Cancun, Mexico (2013 - 2017)</li>
-                <li>&gt; <strong>Front-End Developer Career Path</strong> - In Progress</li>
-                <li>&gt; <strong>Certifications</strong>
-                    <ul>
-                        <li>Salesforce Sales Operations - Coursera</li>
-                        <li>Customer Service Fundamentals - Coursera</li>
-                        <li>Google Digital Marketing & E-Commerce - In Progress</li>
+                <li class="item"><strong>Front-End Developer Career Path</strong> <br> (In Progress) <br>Codecademy</li>
+                <li class="item"><strong>Certifications</strong>
+                    <ul class="certification-list">
+                        <li>Salesforce Sales Operations <br> Coursera</li>
+                        <li>Customer Service Fundamentals <br> Coursera</li>
+                        <li>Google Digital Marketing & E-Commerce <br> (In Progress)</li>
                     </ul>
                 </li>
             </ul>
+        </div>
         </div>
     </section>
 
     <!--Projects-->
     <section id="projects">
+        <div class="container">
         <h3>PROJECTS</h3>
         <ul class="project-list">
             <li><a href="#">PupSpa</a></li>
             <li><a href="#">Piano Player</a></li>
             <li><a href="#">Developer Portfolio</a></li>
         </ul>
+        </div>
     </section>
 
     <!--Get in Touch and Social Media-->
     <section id="contact">
+        <div class="container">
         <div class="get-in-touch">
             <h3>GET IN TOUCH</h3>
-            <p class="message">Whether to speak about tech, finances, music or <br>
-               anything, I'd love to hear from you - shoot me a <br>
+            <p class="message">Whether to speak about tech, finances, music or 
+               anything, I'd love to hear from you - shoot me a
                message at: </p>
             <p class="email">luismunoz2592@gmail.com</p>
         </div>
@@ -115,7 +137,7 @@
             <div class="social">
                 <a class="social-icon" href="https://www.linkedin.com/in/luismunoz2592/" target="_blank"><img src="./icons/LinkedIn.svg" alt="linkein-logo"></a>
                 <a class="social-icon" href="https://github.com/LuisMunoz25" target="_blank"><img src="./icons/github.svg" alt="github-logo"></a>
-                <a class="social-icon" href="https://www.coursera.org/learner/luis-munoz-25" target="_blank"><img src="./icons/coursera.svg" alt="coursera-logo"></a>
+                <a class="social-icon" href="https://www.coursera.org/learner/luis-munoz-25" target="_blank"><img src="./icons/Coursera.svg" alt="coursera-logo"></a>
             </div>
         </div>
 
@@ -123,12 +145,16 @@
             <div class="cat"><img src="./pictures and gifs/cat-coding.gif" alt="cat"></div>
             <p>Made with HTML, CSS, JS... and just a bit of chaos.</p>
         </div>
+        </div>
     </section>
 
     <!--Footer-->
     <footer class="footer">
+        <div class="container">
         <p>&copy; LUIS MUNOZ 2025</p>
+        </div>
     </footer>
+
 <script src="./script.js"></script>
 </body>
 </html>
