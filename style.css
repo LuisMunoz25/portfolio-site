@@ -273,13 +273,13 @@ padding: 0.5rem 0;
 
 .email a {
   color:#46433B;
-  text-decoration: none;
-}
-
-.email a:hover {
   text-decoration: underline;
 }
 
+.email a:hover {
+  text-decoration: none;
+  color: #696cf5;
+}
 
 .social-media {
   display: flex;
@@ -309,6 +309,7 @@ padding: 0.5rem 0;
 
 .cat-coding {
   text-align: center;
+  padding: 1rem 0;
 }
 
 .cat-coding img {
@@ -419,6 +420,35 @@ padding: 0.5rem 0;
  .tech-section {
     grid-area: 5 / 4 / 6 / 7;
     height: 150px;
+    margin-top: 3rem;
   } 
+
+  .experience-education .container {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 2rem;
+  }
+
+  .experience, .education {
+    width: 50%;
+    margin: 0 2%;
+  }
+
+  .divider {
+    background-color: #504935;
+    width: 1.5px;
+    align-self: stretch;
+    height: auto;
+  }
+
+    #contact .container {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+
+  .get-in-touch, .social-media {
+    width: 50%;
+    margin: 0 2%;
+  }
 
 }
