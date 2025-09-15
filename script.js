@@ -13,7 +13,7 @@ const changeTheme = function () {
     body.classList.toggle('dark-theme');
     moon.style.display = moon.style.display === 'none' ? 'block' : 'none';
     sun.style.display = sun.style.display === 'block' ? 'none' : 'block';
-    navLinks.style.backgroundColor = body.classList.contains('dark-theme') ? '#504935' : '#504935';
+    // navLinks.style.backgroundColor = body.classList.contains('dark-theme') ? '#504935' : '#504935';
 };
 
 toggle.addEventListener('click', changeTheme);
@@ -44,3 +44,50 @@ navItems.forEach(link => {
 });
 
 
+// Typewriter effect with multiple phrases
+function initTypewriter() {
+    const element = document.getElementById("typewriter");
+    const phrases = ["HELLO, WORLD!", "WELCOME!"];
+    let currentPhrase = 0;
+    let index = 0;
+    let isDeleting = false;
+    
+    function type() {
+        const text = phrases[currentPhrase];
+        
+        // Set the text with current progress
+        element.textContent = text.substring(0, index);
+        
+        if (!isDeleting) {
+            // Typing forward
+            index++;
+            
+            if (index > text.length) {
+                // Finished typing, pause then start deleting (except for last phrase)
+                if (currentPhrase < phrases.length - 1) {
+                    isDeleting = true;
+                    setTimeout(type, 1000);
+                }
+                return;
+            }
+        } else {
+            // Deleting backward
+            index--;
+            
+            if (index === 0) {
+                // Finished deleting, move to next phrase
+                isDeleting = false;
+                currentPhrase++;
+            }
+        }
+        
+        // Continue typing/deleting
+        setTimeout(type, isDeleting ? 50 : 100);
+    }
+    
+    // Start the effect
+    type();
+}
+
+// Initialize the typewriter effect
+initTypewriter();

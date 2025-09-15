@@ -123,7 +123,7 @@ header {
   right: -100%;
   width: 80%;
   height: 100vh;
-  background-color: #fff;
+  background-color: #504935;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -188,7 +188,7 @@ main .container {
 }
 
 #typewriter {
-  padding: 2rem 0;
+  height: 4rem;
   font-family: "jetbrains-mono";
   font-size: 1.5rem;
 }
@@ -198,7 +198,7 @@ main .container {
  flex-direction: column;
 }
 
-#intro {
+.intro {
   display: none;
 }
 
@@ -495,7 +495,7 @@ padding: 0.5rem 0;
     height: auto;
   }
 
-    #contact .container {
+  #contact .container {
     display: flex;
     margin-bottom: 2rem;
   }
